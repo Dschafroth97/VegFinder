@@ -1,8 +1,11 @@
+/* General */
 body, html {
     height: 100%;
     font-family: 'Fira Sans', sans-serif;
 }
 
+
+/* Nav Styles */
 nav {
     border-bottom: 5px solid #1da548;
 }
@@ -27,6 +30,8 @@ nav .btn {
     color: white;
 }
 
+
+/* Jumbotron Styles */
 .jumbotron {
     background-image: url(../img/bg2.jpeg);
     background-repeat: no-repeat;
@@ -41,4 +46,20 @@ nav .btn {
 
 .jumbotron .container {
     padding-top: 2rem;
+}
+
+/* Results Styles */
+.card {
+    width: 15rem;
+    height: 15rem;
+    background-color: grey;
+}
+
+/* Footer Styles */
+.page-footer {
+    border-top: 1px solid grey;
+}
+
+.footer-copyright {
+    background-color: #1da548;
 }

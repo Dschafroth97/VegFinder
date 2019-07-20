@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Righteous&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Righteous&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/349b1d1f9e.js"></script>
   <link rel="stylesheet" href="assets/css/style.css">
   <title>VegFinder</title>
@@ -18,7 +18,7 @@
 
 <body>
 
-
+  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">VegFinder</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -40,35 +40,140 @@
     <button type="button" class="btn">Log In/Sign Up</button>
 
   </nav>
+  <!-- Navbar -->
 
 
+  <!-- Jumbo Tron -->
   <div class="jumbotron">
+
     <div class="container mt-5">
+
       <h1 class="text-center">Search Nearby Veg-Friendly Restaurants</h1>
+
       <div class="input-group">
+
         <input type="text" class="form-control" placeholder="Search for city, region or zipcode"
           aria-label="Recipient's username" aria-describedby="button-addon2">
+
         <div class="input-group-append">
+
           <button class="btn btn-success" type="button" id="button-addon2"><i class="fas fa-search"></i></button>
+
         </div>
+
       </div>
 
     </div>
-  </div>
-
-  <div class="container text-dark" id="results">
-    <h1>
-      Veg-Friendly Results
-    </h1>
 
   </div>
+  <!-- Jumbo Tron -->
+
+
+  <!-- Results Display -->
+  <div class="container text-dark pb-3" id="results">
+    <h1>Veg-Friendly Results</h1>
+
+    <div class="row">
+      <div class="card m-3">
+
+      </div>
+      <div class="card m-3">
+
+        </div>
+        <div class="card m-3">
+
+          </div>
+          <div class="card m-3">
+
+            </div>
+    </div>
+
+  </div>
+  <!-- Results Display -->
 
 
 
-  <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
+  <!-- Footer -->
+  <footer class="page-footer font-small blue pt-4">
+
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left">
+
+      <!-- Grid row -->
+      <div class="row">
+
+        <!-- Grid column -->
+        <div class="col-md-6 mt-md-0 mt-3">
+
+          <!-- Content -->
+          <h5 class="text-uppercase">Footer Content</h5>
+          <p>Here you can use rows and columns to organize your footer content.</p>
+
+        </div>
+
+        <hr class="clearfix w-100 d-md-none pb-3">
+
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+
+          <!-- Links -->
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Link 1</a>
+            </li>
+            <li>
+              <a href="#!">Link 2</a>
+            </li>
+            <li>
+              <a href="#!">Link 3</a>
+            </li>
+            <li>
+              <a href="#!">Link 4</a>
+            </li>
+          </ul>
+
+        </div>
+
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+
+          <!-- Links -->
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Link 1</a>
+            </li>
+            <li>
+              <a href="#!">Link 2</a>
+            </li>
+            <li>
+              <a href="#!">Link 3</a>
+            </li>
+            <li>
+              <a href="#!">Link 4</a>
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="footer-copyright text-center py-3">© 2019 Copyright:
+      VegFinder
+    </div>
+
+  </footer>
+  <!-- Footer -->
+
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
     crossorigin="anonymous"></script>
