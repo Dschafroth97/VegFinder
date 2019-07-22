@@ -30,6 +30,16 @@ nav .btn {
     color: white;
 }
 
+/* Login Modal */
+#txtEmail, #txtPassword {
+    border: 0px;
+    border-bottom: 1.1px solid black;
+    width: 100%;
+}
+
+#txtEmail, #txtPassword:focus {
+    outline: 0;
+}
 
 /* Jumbotron Styles */
 .jumbotron {

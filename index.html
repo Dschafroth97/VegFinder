@@ -19,7 +19,7 @@
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light mt-3">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light mt-2">
     <a class="navbar-brand" href="#">VegFinder</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,7 +37,39 @@
       </ul>
     </div>
 
-    <button type="button" class="btn">Log In/Sign Up</button>
+    <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">Log In/Sign Up</button>
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Log In or Create User</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+
+            <div class="col-md-12">
+              <input id="txtEmail" type="email" placeholder="Email">
+            </div>
+            <div class="col-md-12">
+              <input id="txtPassword" type="password" placeholder="Password">
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <button id="btnSignUp" type="button" class="btn btn-secondary" data-dismiss="modal">Sign Up</button>
+            
+            <button id="btnLogin" type="button" class="btn btn-secondary" data-dismiss="modal">Log In</button>
+            
+            <button id="btnLogout" type="button" class="btn btn-action d-md-none">Log out</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
   </nav>
   <!-- Navbar -->
@@ -52,8 +84,8 @@
 
       <div class="input-group">
 
-        <input type="text" class="form-control" placeholder="Search for city, region or zipcode"
-          aria-label="Recipient's username" aria-describedby="button-addon2">
+        <input type="text" class="form-control" id="search" placeholder="Search for city, region or zipcode"
+          aria-label="Search" aria-describedby="button-addon2">
 
         <div class="input-group-append">
 
@@ -108,7 +140,7 @@
   </div>
   <!-- Results Display -->
 
-  
+
   <!-- Popular Recipes -->
   <div class="container text-dark pb-5" id="results">
     <h1>Popular Recipes</h1>
@@ -230,6 +262,7 @@
 
 
 
+  <!-- jQuery and Bootstrap scripts -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
@@ -238,6 +271,11 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-app.js"></script>
+
+  <!-- My Logic -->
   <script src="assets/js/index.js"></script>
 </body>
 
